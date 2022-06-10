@@ -1,0 +1,522 @@
+/* carro vazio #################################################################### */
+.sale_vazio{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 92%;
+    height: 27vh;
+    margin-left: 16px;
+    background: #F5F5F5;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: 2vh;
+
+}
+
+.sale_vazio h2{
+    width: 100%;
+    padding: 20px 0px 15px 21px;
+    background: #27AE60;
+    border-radius: 5px 5px 0px 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.sale_vazio p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #333333;
+    margin-top: 56px;
+
+}
+
+.sale_vazio p:nth-child(3){
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #828282;
+    margin-top: 1.5px;
+
+}
+
+/* carro cheio ################################################################## */
+.sale{
+    margin-top: 2vh;
+    width: 91vw;
+    height: 72vh;
+    margin-left: 4vw;
+    background: #F5F5F5;
+    border-radius: 0px 0px 5px 5px;
+    
+}
+
+.sale h2{
+    width: 88vw;
+    padding: 20px 0px 15px 21px;
+    background: #27AE60;
+    border-radius: 5px 5px 0px 0px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: -4px;
+
+}
+
+/* Produtos Carrinho ##########################################################3 */
+
+.sale .produtos{
+    width: 90vw;
+    height:61% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+}
+.sale .produto{
+    margin:5% 0px;
+    border: 0px;
+    width: 100%;
+    height: 24.7%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+.sale .imagem{
+    position: relative;
+    width: 21.5%;
+    height: 100%;
+    background-color:#E0E0E0;
+}
+
+.sale img{
+    width: 100%;
+    height: 100%;
+}
+
+.sale .info{
+    position: relative;
+    height: 100%;
+    width: 78%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    
+    /* flex-direction: column-reverse; */
+    
+
+    
+}
+
+
+.sale .produto h2{
+    /* position: realtive; */
+    background-color: transparent;
+    color: #333333;
+    padding: 0px;
+    margin-left: 3vw;
+    width: 170px;
+
+ 
+}
+
+.sale .produto p{
+  
+    margin-left: 3vw;
+    margin-top: 10px;
+
+   
+
+}   
+
+.sale .produto span{
+    display: none;
+}
+
+.sale .add{
+    display: none;
+}
+
+
+.sale .del{
+    display:inherit;
+    position: absolute;
+    margin-left: 50vw;
+    margin-bottom: 5vh;
+    background-color: transparent;
+    border: none;
+    color: #BDBDBD;
+    width: 40px;
+
+}
+
+
+/* Preco Total ################################################################# */
+
+.precoTotal{
+    height: 27%;
+    /* width: 91vw; */
+    width: 340px;
+    height: 2px;
+    margin-left: 19.95px;
+    border-top: 323px;
+
+    background: #E0E0E0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+
+.precoTotal p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+
+    width: 13%;
+    height: 16%;
+    margin: 5% 0 0 0.47%; 
+
+
+}
+
+.precoTotal span{
+    margin-top: 5%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #828282;
+}
+
+.precoTotal button{
+    width: 343px;
+    height: 60px;
+    left: 18.45px;
+    margin-top: 10%;
+    background: #E0E0E0;
+    border: 2px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+
+}
+
+.precoTotal button:hover{
+    background: #828282;
+    color: #E0E0E0;
+    
+}
+
+.precoTotal button:active{
+    background: #E0E0E0;
+    border: 2px solid #E0E0E0;
+    color: #828282;
+}
+
+/* MEDIA ################################################################################################# */
+@media (min-width: 600px) {
+    .sale_vazio{
+        /* position: relative; */
+        width: 365px;
+        height: 223px;
+        
+
+    }
+
+    .sale{
+        margin-top: 32px;
+        margin-left: 0;
+        width: 363px;
+        height: 525px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale h2{
+        width: 365px;
+        
+
+    }
+
+  
+
+    .sale .produtos{
+        width: 365px;
+        height:323px;
+        overflow: unset;
+        overflow-y: auto;
+        
+
+    }
+
+    .sale .produto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .sale .info button{
+        margin-left: 200px;
+        margin-top: 15px;
+    }
+
+    .sale .info h2{
+        margin-left: 1vw;
+
+    }
+
+    .sale .info p{
+        margin-left: 1vw;
+    }
+
+
+
+
+    .sale .imagem{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+
+
+    .precoTotal{
+        height: 140px;
+        width: 362px;
+        /* width: 340px; */
+        margin-left: 5px;
+
+        border-top: 2px #E0E0E0 solid;
+        
+
+        margin-top: 5px;
+        background-color: #F5F5F5 ;
+    }
+
+    
+    .precoTotal p{
+        
+        font-size: 24px;
+        line-height: 24px;
+        color: #333333;
+    
+        width: 13%;
+        height: 16%;
+        margin: 5% 0 0 3%; 
+    
+    
+    }
+    
+    .precoTotal span{
+        margin-top: 5%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #828282;
+        margin-left: 5%;
+    }
+    
+    .precoTotal button{
+        width: 343px;
+        height: 60px;
+        margin-top: 0px;
+        background: #E0E0E0;
+        border: 2px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin-left: 6%;
+    
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #828282;
+    
+    }
+
+
+
+
+
+}
+
+
+
+
+@media (min-width: 1200px) {
+
+    .sale_vazio{
+        /* position: relative; */
+        width: 365px;
+        height: 223px;
+        /* margin-top: -86vh;
+        margin-left: 75vw; */
+
+    }
+
+    .sale{
+        margin-top: 32px;
+        margin-left: 0;
+        width: 363px;
+        height: 525px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale h2{
+        width: 365px;
+        
+
+    }
+
+  
+
+    .sale .produtos{
+        width: 365px;
+        height:323px;
+        overflow: unset;
+        overflow-y: auto;
+        
+
+    }
+
+    .sale .produto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .sale .info button{
+        margin-left: 200px;
+        margin-top: 15px;
+    }
+
+    .sale .info h2{
+        margin-left: 1vw;
+
+    }
+
+    .sale .info p{
+        margin-left: 1vw;
+    }
+
+
+
+
+    .sale .imagem{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+
+
+    .precoTotal{
+        height: 140px;
+        width: 362px;
+        /* width: 340px; */
+        margin-left: 5px;
+
+        border-top: 2px #E0E0E0 solid;
+        
+
+        margin-top: 5px;
+        background-color: #F5F5F5 ;
+    }
+
+    
+    .precoTotal p{
+        
+        font-size: 24px;
+        line-height: 24px;
+        color: #333333;
+    
+        width: 13%;
+        height: 16%;
+        margin: 5% 0 0 3%; 
+    
+    
+    }
+    
+    .precoTotal span{
+        margin-top: 5%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 24px;
+        color: #828282;
+        margin-left: 5%;
+    }
+    
+    .precoTotal button{
+        width: 343px;
+        height: 60px;
+        margin-top: 0px;
+        background: #E0E0E0;
+        border: 2px solid #E0E0E0;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin-left: 6%;
+    
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #828282;
+    
+    }
+
+
+
+
+    
+
+
+
+
+
+    
+}
+
+
+

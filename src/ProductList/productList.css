@@ -1,0 +1,244 @@
+/* HEADER ######################################################################## */
+.header{
+    
+    width: 100vw;
+    height: 139px;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* position:relative; */
+
+}
+
+.header h1{
+    height: 36px;
+    width: 55%;
+    margin-top: 13px;
+    font-size: 30px;
+    font-weight: 900;
+    
+    text-align: end;
+
+}
+
+
+.header h2{
+    height: 23px;
+    width: 45%;
+    font-size: 15px;
+    margin-top: 26px;
+    font-weight: 400;
+    color: red;
+
+}
+
+.header input{
+    width: 382px;
+    height: 60px;
+    margin-top: 10px;
+
+    background: #FFFFFF;
+    border: 2px solid #333333;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-left: 10px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #828282;
+}
+
+.header button{
+    position: absolute;
+    width: 25%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: -110px;
+
+    background: #27AE60;
+    border: 2px solid #27AE60;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+}
+
+.header button:hover{
+    background: #93D7AF;
+    border-color: #93D7AF;
+
+
+}
+
+.header button:active{
+    background: #27AE60;
+    border: 2px solid #27AE60;
+
+}
+
+/* VITRINE ######################################################################### */
+.vitrine{
+    height: 47.02vh;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+
+/* Media Query ################################################# */
+@media (min-width: 600px) {
+    .header{
+        height: 80px;
+        justify-content: space-between ;
+    }
+
+    .header h1{
+        text-align: start;
+        width: auto;
+        margin-top: 20px;
+
+    }
+    .header h1::after{
+        content:"Kenzie";
+        height: 23px;
+        font-size: 15px;
+        margin-top: 26px;
+        font-weight: 400;
+        color: red;
+
+    }
+
+    .header h2{
+        display: none;
+       
+        
+    }
+
+    .header input{
+        height: 60px;
+        width: 250px;
+
+
+    }
+
+    .header button{
+        position:absolute;
+
+        height: 40px;
+        width: 107px;
+        margin-top: 20px;
+        margin-left: -120px;    
+
+    }
+
+
+    .vitrine{
+        
+        width: 80vw;
+        height: 650px;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow-y:auto;
+
+        overflow-x: hidden;
+    }
+
+
+}
+
+
+@media (min-width: 1200px) {
+    .header{
+        width: 1370px;
+        height: 80px;
+        justify-content: space-between ;
+    }
+
+    .header h1{
+        text-align: start;
+        width: auto;
+        margin-top: 20px;
+
+    }
+    .header h1::after{
+        content:"Kenzie";
+        height: 23px;
+        font-size: 15px;
+        margin-top: 26px;
+        font-weight: 400;
+        color: red;
+
+    }
+
+    .header h2{
+        display: none;
+       
+        
+    }
+
+    .header input{
+        height: 60px;
+        width: 365px;
+
+
+    }
+
+    .header button{
+        position:absolute;
+
+        height: 40px;
+        width: 107px;
+        margin-top: 20px;
+        margin-left: -120px;    
+
+    }
+
+
+    .vitrine{
+        
+        width: 700px;
+        height: 735px;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow:unset;
+
+    }
+
+
+
+
+    
+}
+
+@media (min-width: 900px) {
+
+    .vitrine{
+        
+        width: 945px;
+        height: 735px;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow:unset;
+
+    }
+    
+}
